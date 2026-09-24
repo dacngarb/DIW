@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejemplo de &lt;dialog&gt;</title>
+    </head>
+    <body>
+        <button id="abrir">Abrir diálogo</button>
+        <dialog id="miDialogo">
+            <h2>Ventana emergente</h2>
+            <p>Este es un mensaje dentro del cuadro de diálogo.</p>
+        <button id="cerrar">Cerrar</button>
+        </dialog>
+    <script>
+        const dialogo = document.getElementById("miDialogo");
+        
+        document.getElementById("abrir").addEventListener("click", () => dialogo.showModal());
+        document.getElementById("cerrar").addEventListener("click", () => dialogo.close());
+    </script>
+    </body>
+</html>

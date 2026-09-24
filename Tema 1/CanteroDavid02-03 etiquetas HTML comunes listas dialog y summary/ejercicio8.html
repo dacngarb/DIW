@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        background-color: rgb(198, 215, 224);
+            }
+        dialog {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        width: 350px;
+                }
+        summary {
+        cursor: pointer;
+        font-weight: bold;
+                }
+        button {
+        margin-top: 15px;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 8px;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+                }
+        button:hover {
+        background-color: #45a049;
+                    }
+</style>
+</head>
+<body>
+
+    <h1>Bienvenido</h1>
+    <p>Si tienes dudas, abre el centro de ayudas</p>
+
+    <button id="abrir">Abrir centro de ayudas</button>
+
+    <dialog id="miDialogo">
+            <h2>Centro de ayudas</h2>
+            <details>
+                <summary>¿Qúe es este sitio?</summary>
+                    <p>Un centro de ayudas</p>
+            </details>
+
+            <details>
+                <summary>¿Cómo cierro este cuadro?</summary>
+                    <p>Dandole a cerrar</p>
+            </details>
+
+            <details>
+                <summary>¿Qué tecnologías se usan?</summary>
+                    <p>HTML5, CSS3 y un poco de JavaScript para la interactividad</p>
+            </details>
+        <button id="cerrar">Cerrar</button>
+        </dialog>
+
+    <script>
+        const dialogo = document.getElementById("miDialogo");
+        
+        document.getElementById("abrir").addEventListener("click", () => dialogo.showModal());
+        document.getElementById("cerrar").addEventListener("click", () => dialogo.close());
+    </script>
+    
+</body>
+</html>

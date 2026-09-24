@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <h1>David Cantero García</h1>
+
+    <button id="abrir">Abrir diálogo</button>
+        <dialog id="miDialogo">
+            <h2>Ruegos y Preguntas</h2>
+            <p>¿Qué es un dialog?</p>
+            <p>¿Qué son las listas?</p>
+            <p>¿Como funciona el JavaScript</p>
+        <button id="cerrar">Cerrar</button>
+        </dialog>
+    <script>
+        const dialogo = document.getElementById("miDialogo");
+        
+        document.getElementById("abrir").addEventListener("click", () => dialogo.showModal());
+        document.getElementById("cerrar").addEventListener("click", () => dialogo.close());
+    </script>
+</body>
+</html>

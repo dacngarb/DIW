@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Galería interactiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #b7dfe4;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .galeria img {
+            width: 120px;
+            height: 80px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.1);
+        }
+
+        dialog {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+            width: 400px;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+        }
+
+        dialog img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .cerrar {
+            margin-top: 15px;
+            border: none;
+            background-color: #d9534f;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .cerrar:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Galería interactiva</h1>
+    <p>Haz clic en una imagen para ver más detalles.</p>
+
+    <div class="galeria">
+        <img src="panda.jpg" alt="panda" id="img1">
+        <img src="chetaath.jpg" alt="guepardo" id="img2">
+        <img src="rino.jpg" alt="rino" id="img3">
+        <img src="leon.jpg" alt="leon" id="img4">
+        <img src="tiburon.jpg" alt="tiburon" id="img5">
+    </div>
+
+    <dialog id="miDialogo1">
+        <img id="imagenGrande" src="panda.jpg" alt="Imagen ampliada">
+        <p>Oso panda</p>
+        <details >
+            <summary>Descripción</summary>
+            <p id="descripcion">El panda gigante es un mamífero de pelaje blanco y negro, 
+                cuerpo robusto y cara redondeada.</p>
+        </details>
+        <button class="cerrar" id="cerrarDialogo1">Cerrar</button>
+    
+    </dialog>
+
+
+    <dialog id="miDialogo2">
+        <img id="imagenGrande" src="chetaath.jpg" alt="Imagen ampliada">
+        <p>Guepardo</p>
+        <details >
+            <summary>Descripción</summary>
+            <p id="descripcion">Felino de cuerpo delgado, 
+                patas largas y pelaje amarillo con manchas negras.</p>
+        </details>
+        <button class="cerrar" id="cerrarDialogo2">Cerrar</button>
+    </dialog>
+
+    <dialog id="miDialogo3">
+        <img id="imagenGrande" src="rino.jpg" alt="Imagen ampliada">
+        <p>Rinoceronte</p>
+        <details >
+            <summary>Descripción</summary>
+            <p id="descripcion">Mamífero grande y robusto, 
+                con piel gruesa y uno o dos cuernos sobre el hocico</p>
+        </details>
+        <button class="cerrar" id="cerrarDialogo3">Cerrar</button>
+    </dialog>
+
+    <dialog id="miDialogo4">
+        <img id="imagenGrande" src="leon.jpg" alt="Imagen ampliada">
+        <p>León</p>
+        <details >
+            <summary>Descripción</summary>
+            <p id="descripcion">Gran felino de pelaje marrón o dorado. 
+                Los machos suelen tener una melena característica.</p>
+        </details>
+        <button class="cerrar" id="cerrarDialogo4">Cerrar</button>
+    </dialog>
+
+    <dialog id="miDialogo5">
+        <img id="imagenGrande" src="tiburon.jpg" alt="Imagen ampliada">
+        <p>Tiburón</p>
+        <details >
+            <summary>Descripción</summary>
+            <p id="descripcion">Pez de cuerpo alargado, 
+                dientes afilados y varias filas de branquias. </p>
+        </details>
+        <button class="cerrar" id="cerrarDialogo5">Cerrar</button>
+    </dialog>
+
+
+    <script>
+        const dialogo = document.getElementById("miDialogo1");
+        
+        document.getElementById("img1").addEventListener("click", () => dialogo.showModal());
+        document.getElementById("cerrarDialogo1").addEventListener("click", () => dialogo.close());
+
+        const dialogo1 = document.getElementById("miDialogo2");
+        
+        document.getElementById("img2").addEventListener("click", () => dialogo1.showModal());
+        document.getElementById("cerrarDialogo2").addEventListener("click", () => dialogo1.close());
+
+        const dialogo2 = document.getElementById("miDialogo3");
+        
+        document.getElementById("img3").addEventListener("click", () => dialogo2.showModal());
+        document.getElementById("cerrarDialogo3").addEventListener("click", () => dialogo2.close());
+        
+        const dialogo3 = document.getElementById("miDialogo4");
+        
+        document.getElementById("img4").addEventListener("click", () => dialogo3.showModal());
+        document.getElementById("cerrarDialogo4").addEventListener("click", () => dialogo3.close());
+
+        const dialogo4 = document.getElementById("miDialogo5");
+        
+        document.getElementById("img5").addEventListener("click", () => dialogo4.showModal());
+        document.getElementById("cerrarDialogo5").addEventListener("click", () => dialogo4.close());
+
+
+        
+    </script>
+</body>
+
+</html>
