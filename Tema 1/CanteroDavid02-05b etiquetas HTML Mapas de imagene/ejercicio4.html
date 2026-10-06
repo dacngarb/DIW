@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Cantero García</title>
+</head>
+
+<body>
+    <h1>Ejercicio 4</h1>
+
+    <img src="ejercicio4.png" id="map-image" style="width: 368px; max-width: 100%; height: auto;" alt="" usemap="#map">
+
+    <map name="map">
+        <area shape="poly" coords="59,210,49,206,48,197,56,196,108,223,70,257,48,255,43,240,50,224" href="#"
+            alt="Área del mapa">
+    </map>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("map").imageMapResize();
+        });
+    </script>
+</body>
+
+</html>
