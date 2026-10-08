@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Cantero García</title>
+</head>
+<body>
+    <h1>02-07 etiquetas HTML5 Tablas anidadadas</h1>
+
+    <!--Ejercicio 1-->
+    <h2>Ejercicio 1 Fusión de celdas: rowspan y colspan</h2>
+    <b>a.</b>
+    <table border="1" width="500">
+        <tr>
+            <td colspan= "2">Esta celda tiene un colspan="2"</td>
+            
+        </tr>
+        <tr>
+            <td>Celda normal</td>
+            <td>Otra del celda normal</td>
+        </tr>
+    </table>
+
+    <b>b.</b>
+    <table border="1" width="500">
+        <tr>
+            <td rowspan="2">Esta celda tiene rowspan="2", por eso
+                tiene fusionada la celda de abajo.</td>
+            <td>Celda normal</td>
+        </tr>
+
+        <tr>
+            <td>Otra celda normal</td>
+        </tr>
+
+    </table>
+
+    <h3>c. Usa el atributo style=”background-color: color” para colorear 
+        toda la tabla de un azul y mezcar un colspan y un rowspan</h3>
+    
+    <table style="background-color: aquamarine; text-align: center;" border="1" width="500">
+        <tr>
+           <td colspan="2">Linea1Linea2</td> 
+        </tr>
+        <tr>
+            <td>Linea3</td>
+            <td>Linea4</td>
+        </tr>
+        <tr>
+            <td>Linea5</td>
+            <td rowspan="2">Linea6Linea8</td>
+        </tr>
+        <tr>
+            <td>Linea7</td>
+        </tr>
+    </table>
+
+    <h3>d. usa el atributo style=”background-color: color” para colorear cada celda con un color 
+        “parecido al de la tabla”. (puedes usar irfan para sacar el codigo)</h3>
+
+    <table width="500" border style="text-align: center;">
+        <tr>
+            <td style="background-color:rgb(204,255,204);">Linea1</td>
+            <td style="background-color:rgb(255,255,0);">Linea2</td>
+        </tr>
+        <tr>
+            <td style="background-color:rgb(51,255,0);">Linea3</td>
+            <td style="background-color:rgb(204,255,0);">Linea4<br>linea6</td>
+        </tr>
+        <tr>
+            <td style="background-color:rgb(204,204,255);">Linea5<br>linea7</td>
+            <td style="background-color:rgb(255,255,204);">Linea8</td>
+        </tr>
+    </table>
+
+    <h3>e. Crea estas tablas con colspan y rowspan</h3>
+    <table border="1" width="300" height="100">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td rowspan="3">C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td rowspan="2">E</td>
+            <td>F</td>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+        </tr>
+
+    </table>
+    <br>
+    <table border="1" width="300" height="100">
+        <tr>
+            <td colspan="2">A</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td colspan="3">E</td>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+
+</body>
+</html>
