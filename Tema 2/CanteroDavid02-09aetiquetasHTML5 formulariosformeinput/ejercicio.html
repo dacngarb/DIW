@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Cantero García</title>
+</head>
+<body>
+    <h1><u>02-09a etiquetas HTML5 formularios form e input</u></h1>
+
+    <!--Ejercicio  1-->
+    <h1>Formularios</h1>
+    <h3>1. Escribe en un documento htm con el titulo 
+        &lt;h1> formularios <&lt;/h1> y con tus palabras en que 
+        consiste el Funcionamiento de los formularios</h3>
+    <p>consiste en recoger información que una persona introduce en 
+        distintos campos, como su nombre, correo electrónico, dirección o 
+        respuestas a preguntas</p>
+
+    <!--ejercicio 2-->
+    <h1>GET/POST</h1>
+    <h3>2. Escribe en un documento htm con el titulo &lt;h1> GET/POST &lt;/h1> y 
+        con tus palabras en que consiste el paso de datos mediante GET y 
+        post y las ventajas de cada uno</h3>
+    <p><b>GET:</b> envía los datos a través de la dirección URL, por lo 
+        que pueden verse en la barra del navegador. </p>
+        <ul>
+            <li>Permite guardar y compartir enlaces con los resultados de una búsqueda</li>
+        </ul>
+    <p><b>POST:</b>envía los datos dentro de la petición al servidor, sin 
+        mostrarlos directamente en la URL</p>
+        <ul>
+            <li>Permite enviar más información</li>
+            <li>Es más adecuado para formularios de registro o envío de 
+                datos personales</li>
+        </ul>
+
+        <!--ejercicio 4-->
+    <h1>Tabla</h1>
+    <h3>4. Escribe en un documento htm con el caption &lt;h1> Atributos text&lt;/h1> 
+        una tabla de ordenada que explique cada atributo del en 3/4 palabras</h3>
+    <table border="1">
+        <tr>
+            <td>type</td>
+            <td style="width: 200px;"></td>
+            <td>form</td>
+            <td style="width: 200px;"></td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td style="width: 200px;"></td>
+            <td>formnovalidated</td>
+            <td style="width: 200px;"></td>
+        </tr>
+        <tr>
+            <td>size</td>
+            <td style="width: 200px;"></td>
+            <td>maxlength</td>
+            <td style="width: 200px;"></td>
+        </tr>
+        <tr>
+            <td>value</td>
+            <td style="width: 200px;"></td>
+            <td>id</td>
+            <td style="width: 200px;"></td>
+        </tr>
+        <tr>
+            <td>disabled</td>
+            <td style="width: 200px;"></td>
+            <td>readonly</td>
+            <td style="width: 200px;"></td>
+        </tr>
+        <tr>
+            <td>autocomplete</td>
+            <td style="width: 200px;"></td>
+            <td>required</td>
+            <td style="width: 200px;"></td>
+        </tr>
+        <tr>
+            <td>autofocus</td>
+            <td style="width: 200px;"></td>
+            <td>pattern</td>
+            <td style="width: 200px;"></td>
+        </tr>
+        <tr>
+            <td>disabled</td>
+            <td style="width: 200px;"></td>
+            <td>placeholder</td>
+            <td style="width: 200px;"></td>
+        </tr>
+    </table>
+
+    <!--ejercicio 5-->
+    <h1>Formularios</h1>
+    <h3>Escribe en un documento htm con el titulo &lt;h1> formulario &lt;/h1> . 
+        Crea un form con get e introduce los siguientes controles. 
+        El id debe tener el mismo nombre que el label que contenga</h3>
+
+    <form action="" method="get">
+        <label id="Nombre">Nombre</label><br>
+            <input type="text" pattern="[A-Za-z]" required autofocus name="Nombre"><br>
+
+        <label id="Apellidos">Apellidos</label><br>
+            <input type="text" pattern="[A-Za-z ]" required name="Apellidos"><br>
+        
+        <label id="Edad">Edad</label>Edad<br>
+            <input type="text" pattern="[0-9]" required name="Edad"><br>
+        
+        <label id="Contraseña">Contraseña</label><br>
+            <input type="password" maxlength="5" name="Contraseña"><br>
+
+        <input type="hidden" name="" id="" value="edad"><br>
+
+        <input type="submit" name="" id="" value="Enviar">
+        <input type="reset" name="" id="" value="borrar">
+        <input type="button" name="" id="" value="boton">   
+    </form>
+
+       <!--ejercicio 6-->
+    <h1>Atributos button</h1>
+    <h3>6. Escribe en un documento htm con el titulo &lt;h1> Atributos button &lt;/h1> 
+        una lista de ordenada que explique cada atributo.</h3>
+
+    <ul>
+        <li>Formaction: permite indicar el servicio al que se enviarán los datos del formulario</li>
+        <li>formethod: permite indicar el método de paso (GET o POST) de los datos</li>
+        <li>formenctype: indica la forma de codificación de los datos</li>
+        <li>formnovalidate: Los datos que se envían no se validarán</li>
+        <li>formtarget: El destino de los datos se mostrarán en una ventana aparte si se le da el valor _blank a este atributo</li>
+    </ul>
+
+    <!--ejercicio 7-->
+    <h3>7. Crea un formulario get que incluya los siguientes componentes</h3>
+    <form method="get">
+        <label id="NombreCompleto">Nombre Completo</label><br>
+            <input type="text" pattern="[A-Za-z ]" required  name="NombreCompleto"><br><br>
+
+        <label id="Estudios"><b>Estudios recientes</b></label><br>
+        
+            <input type="radio" id="secundaria">
+            <label for="secundaria">Secundaria</label><br>
+
+            <input type="radio" id="gradoMedio">
+            <label for="gradoMedio">Grado medio</label><br>
+
+            <input type="radio" id="gradoSuperior">
+            <label for="gradoSuperior">Grado superior</label><br>
+
+            <input type="radio" id="Universidad">
+            <label for="Universidad">Universidad</label><br><br>
+
+        <label id="verificacion"><b>Verificacion</b></label><br>
+
+            <input type="checkbox" id="terminos">
+            <label for="terminos">Aceptas los terminos</label><br>
+
+            <input type="checkbox" id="compartir">
+            <label for="compartir">Aceptas la compartimentación de datos</label><br><br>
+
+        <label id="archivo">Insertar archivo</label>
+            <input type="file" name="archivo">
+    </form>
+
+    <!--ejercicio 8-->
+    <h3>8. Crea un formulario como este dentro de una tabla con este estilo</h3>
+    <table style="width: 10%; margin-left: auto; margin-right: auto;border: red 1px solid;">
+        <tr>
+            <td>
+                <form>
+                    <label id="Nombre">Nombre</label><br>
+                        <input type="text" pattern="[A-Za-z]" required autofocus name="Nombre"><br>
+
+                    <label id="Apellidos">Apellidos</label><br>
+                        <input type="text" pattern="[A-Za-z ]" required name="Apellidos"><br>
+
+                    <label id="sexo"><b>Escriba el sexo</b></label><br>
+                
+                        <input type="radio" id="hombre">
+                        <label for="hombre">Hombre</label>
+
+                        <input type="radio" id="mujer">
+                        <label for="mujer">Mujer</label><br>
+
+                    <input type="submit" name="" id="" value="Enviar">
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <!--ejercicio 9-->
+    <h3>9. Crea un formulario get para realizar una reserva que 
+        incluya los siguientes componentes</h3>
+    <form>
+        <label id="Nombre">Nombre</label><br>
+            <input type="text" pattern="[A-Za-z]" required autofocus name="Nombre"><br>
+
+        <label id="numeroPersona">Número de personas</label><br>
+            <input type="number" name="numeroPersona"><br>
+
+        <label id="telefono">Teléfono</label><br>
+            <input type="tel" name="telefono"><br>
+
+        <label id="correo">Correo electrónico</label><br>
+            <input type="email" name="correo"><br>
+
+        <label id="fecha">Fecha de resera</label><br>
+            <input type="date" name="fecha"><br>
+
+        <label id="hora">Hora de reserva</label><br>
+            <input type="time" name="hora"><br>
+    </form>
+
+    <!--ejercicio 10-->
+    <h3>10. Crea un formulario get para realizar un ajuste de color que incluya los siguientes componentes</h3>
+    <form method="get">
+        <label id="tematica">Temática</label><br>
+        <input type="text" name="tematica"><br>
+
+        <label id="color">Elige un color</label><br>
+        <input type="color" name="color"><br>
+
+        <label id="contraste">Contraste</label><br>
+        <input type="range" name="contraste"><br>
+
+        <label id="brillo">Brillo</label><br>
+        <input type="range" name="brillo"><br>
+    </form>
+
+    <!--ejercicio 11-->
+    <h3>11. Crea un formulario Post para realizar una submisión de una web a un servicio de busqueda. 
+        debes incluirlo en una tabla</h3>
+    <table style="width: 80%; margin-left: auto; margin-right: auto;border: red 1px solid;"> 
+        <tr>
+            <td style="border: blue 1px solid; text-align: center;" >
+                <label id="tematica">Temática</label><br>
+                <input type="text" name="tematica"><br>
+
+                <label id="url">URL</label><br>
+                <input type="url" name="url"><br>
+
+                <label id="busqueda">Busqueda</label><br>
+                <input type="search" name="busqueda"><br>
+
+                <label id="fichero">Archico Insertar</label><br>
+                <input type="file" name="fichero"><br>
+
+                <input type="submit" name="" id="" value="Enviar">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
