@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Cantero García</title>
+</head>
+<body>
+    <h1>02-09a etiquetas HTML5 Botones . Combobox y textareas</h1>
+    <!--Ejercicio 1-->
+    <h3>Ejercicio 1. Crea un botón moderno Con un texto que diga 
+        "Gracias por pulsarme" con este evento onclick="alert(' Gracias por pulsarme');"</h3>
+    <button onclick="alert('Gracias por pulsarme');">Pulsa click aquí</button>
+    
+    <!--ejercicio 2-->
+    <h3>Ejercicio 2. Crea un botón moderno con una imagen png ojo para que quede asi debes modificar la
+        propiedad css de alineación del texto</h3>
+    
+    <button type="button" onclick="alert('Pulsaste en la imagen')">
+        <img src="boton.avif" alt="Pulsa aquí" style="width: 150px; height: auto;">
+    </button>
+
+    <!--Ejercicio-->
+    <h3>Ejercicio 3. Crea un cuadro combinado como los de la imagen</h3>
+    <form action="servicio.php" method="get" >
+        <label id="pueblos">Selecione su pueblo Blanco de Málaga</label><br>
+
+        <select name="pueblos">
+            <option value="be">Benaoján</option>
+            <option value="mo">Montejaque</option>
+            <option value="at">Atajate</option>
+            <option value="ji">Jimera de Libar</option>
+            <option value="ben">Benaldolid</option>
+            <option value="al">Algatocín</option>
+            <option value="ga">Gaucín</option>
+            <option value="za">Zamora</option>
+        </select>
+        <input type="submit" value="enviar">
+    </form>
+
+    <!--ejercicio 4-->
+    <h3>Ejercicio 4. Crea un cuadro combinado como los de la imagen</h3>
+    <form action="servicio.php" method="get">
+        <label id="provinciaMC">Selecione su pueblo Blanco de Málaga</label><br>
+
+        <select name="provinciaMC">
+            <optgroup label="Málaga">
+                <option value="be">Benaoján</option>
+                <option value="mo">Montejaque</option>
+                <option value="at">Atajate</option>
+                <option value="ji">Jimera de Libar</option>
+                <option value="ben">Benaldolid</option>
+                <option value="al">Algatocín</option>
+                <option value="ga">Gaucín</option>
+            </optgroup>
+            <optgroup label="Cádiz">
+                <option value="ar">Arco de la frontera</option>
+                <option value="ba">Barrios</option>
+                <option value="al">Algodonales</option>
+                <option value="vi">Villamartin</option>
+                <option value="ch">Chipiona</option>
+            </optgroup>
+        </select>
+        <input type="submit" value="enviar" >
+    </form>
+
+    <!--Ejercicio 5-->
+    <h3>Ejercicio 5. Crea un Cuadro de texto multilínea con estas características : El cuadro debe
+        adquirir el foco en cuanto carga la página. Con un tamaño maximo de 50 caracteres y anchura 10
+        columnas y 5 filas Debe tener de placeholder la cadena "Escribe tus impresiones" y debe ser
+        obligatorios</h3>
+    <form action="servicio.php" method="get">
+        <label aria-placeholder="Escribe tus impresiones"></label>
+        <textarea placeholder="Escribe tus impresiones" rows="5" cols="10" maxlength="50" required></textarea><br>
+        <input type="submit" value="enviar">
+    </form>
+
+    <h3>Ejercicio 6. Todo junto crea un formulario con este aspecto con estas especificaciones</h3>
+    <ul>
+        <li>Botones: usar type="submit", reset, button y atributos disabled / autofocus.</li>
+        <li>progress: mostrar barra de progreso estática (ej. 70/100) y dentro de un formulario.</li>
+        <li>meter: representar valores medidos (ej. batería, ocupación) con min/max/low/high.</li>
+        <li>fieldset + legend: agrupar controles de un formulario y deshabilitar grupos.</li>
+        <li>datalist: sugerencias para un &lt;input> (autocomplete local).</li>
+        <li>textarea: atributos maxlength, rows, cols, placeholder, wrap.</li>
+        <li>select + option (y optgroup): selección simple y múltiple, value por defecto.</li>
+        <li>output: mostrar un resultado predefinido (sin cálculo JS) y 
+            uso en formulario para enviar un valor.</li>
+    </ul>
+
+    <p><b>1. Botones('&lt;button&gt;')</b></p>
+    <form action=”control_form.php” method=”get”>
+        
+    </form>
+    
+</body>
+</html>
