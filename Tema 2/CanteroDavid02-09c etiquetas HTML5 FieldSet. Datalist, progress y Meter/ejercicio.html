@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Cantero García</title>
+
+    <style>
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>02-09c etiquetas HTML5 FieldSet. Datalist, progress y Meter</h1>
+
+    <h2>Ejercicio 1</h2>
+
+    <form style="width:400px; height:240px; margin-left:auto; margin-right:auto; background-color:beige; border:1px solid red; border-radius:6px;">
+        <h3>Formulario 3</h3>
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre1">Nombre:</label>
+            <input type="text" name="nombr" value="nombre" id="nombre1"><br>
+
+            <label for="apellido1">Apellido:</label>
+            <input type="text" name="apell" value="apellido" id="apellido1"><br>
+
+            <label for="edad1">Edad:</label>
+            <input type="number" name="ed" id="edad1"><br>
+
+            <label for="satisfaccion1">Seleccione tu satisfacción con el concierto</label>
+            <input type="range" id="satisfaccion1">
+        </fieldset>
+
+        <button type="button">Gracias por tus Opiniones</button>
+    </form>
+
+
+    <h2>Ejercicio 2</h2>
+
+    <form style="width:400px; height:auto; margin-left:auto; margin-right:auto; background-color:beige; border:1px solid red; border-radius:6px;">
+        <h3>Formulario 3</h3>
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre2">Nombre:</label>
+            <input type="text" name="nombr" value="nombre" id="nombre2"><br>
+
+            <label for="apellido2">Apellido:</label>
+            <input type="text" name="apell" value="apellido" id="apellido2"><br>
+
+            <label for="edad2">Edad:</label>
+            <input type="number" name="ed" id="edad2"><br>
+
+            <label for="satisfaccion2">Seleccione tu satisfacción con el concierto</label>
+            <input type="range" id="satisfaccion2">
+        </fieldset>
+
+        <fieldset>
+            <legend>Concierto</legend>
+
+            <label for="concierto">Concierto al que asististe:</label>
+            <input type="text" id="concierto" name="concierto"
+                list="listaConcierto"
+                placeholder="Pulsa para ver conciertos">
+
+            <datalist id="listaConcierto">
+                <option value="Malu">
+                <option value="Omar Montes">
+                <option value="Los Mojinos">
+                <option value="Medina Azahara">
+                <option value="Julio Iglesias">
+            </datalist>
+
+            <br><br>
+
+            <p>Que te pareció el concierto</p>
+            <textarea rows="5" cols="40" name="texto"
+                    placeholder="Escribe algo"></textarea>
+        </fieldset>
+
+        <button type="button">Gracias por tus Opiniones</button>
+    </form>
+
+
+    <h2>Ejercicio 3</h2>
+
+    <form style="width:400px; height:auto; margin-left:auto; margin-right:auto; background-color:beige; border:1px solid red; border-radius:6px;">
+
+        <fieldset>
+            <legend>Genera tu personaje para el juego</legend>
+
+            <label for="nombre3">Nombre:</label>
+            <input type="text" name="nombre" id="nombre3"><br>
+
+            <label for="valora3">Valoracion:</label>
+            <input type="text" id="valora3" name="valo"
+                list="listaFacciones3"
+                placeholder="Pulsa para ver conciertos">
+
+            <datalist id="listaFacciones3">
+                <option value="Guerrero">
+                <option value="Mago">
+                <option value="Ladrón">
+                <option value="Paladín">
+            </datalist>
+
+            <br>
+
+            <label for="edad3">Escoge la edad</label><br>
+            <input type="range" id="edad3"><br>
+
+            <button type="button" onclick="cambio3()">
+                Genera tu personaje
+            </button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos del personaje</legend>
+
+            <label for="Fuerza3">Fuerza</label><br>
+            <progress max="100" id="Fuerza3" value="0"></progress><br>
+
+            <label for="Velocidad3">Velocidad</label><br>
+            <progress max="100" id="Velocidad3" value="0"></progress><br>
+
+            <label for="Persuasion3">Persuasion</label><br>
+            <progress max="100" id="Persuasion3" value="0"></progress><br>
+
+            <label for="Espionaje3">Espionaje</label><br>
+            <progress max="100" id="Espionaje3" value="0"></progress><br>
+        </fieldset>
+
+    </form>
+
+    <script>
+    function cambio3() {
+        document.getElementById("Velocidad3").value = Math.random() * 200;
+        document.getElementById("Fuerza3").value = Math.random() * 200;
+        document.getElementById("Persuasion3").value = Math.random() * 200;
+        document.getElementById("Espionaje3").value = Math.random() * 200;
+    }
+    </script>
+
+
+    <h2>Ejercicio 4</h2>
+
+    <form style="width:400px; margin:auto; background-color:beige; border:1px solid red; border-radius:6px;">
+
+        <fieldset>
+            <legend>Genera tu personaje para el juego</legend>
+
+            <label for="nombre4">Nombre:</label>
+            <input type="text" name="nombre" id="nombre4"><br>
+
+            <label for="valora4">Valoracion:</label>
+            <input type="text" id="valora4" name="valo"
+                list="listaFacciones4"
+                placeholder="Pulsa para ver opciones"
+                onchange="cambiarPersonaje4()">
+
+            <datalist id="listaFacciones4">
+                <option value="Guerrero">
+                <option value="Mago">
+                <option value="Ladrón">
+                <option value="Paladín">
+            </datalist>
+
+            <br>
+
+            <label for="edad4">Escoge la edad</label><br>
+            <input type="range" id="edad4"><br>
+
+            <button type="button" onclick="cambio4()">
+                Genera tu personaje
+            </button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos del personaje</legend>
+
+            <label for="Fuerza4">Fuerza</label><br>
+            <meter min="1" max="200" high="150" low="60"
+                id="Fuerza4" value="1"></meter><br>
+
+            <label for="Velocidad4">Velocidad</label><br>
+            <meter min="1" max="200" high="150" low="60"
+                id="Velocidad4" value="1"></meter><br>
+
+            <label for="Persuasion4">Persuasion</label><br>
+            <meter min="1" max="200" high="150" low="60"
+                id="Persuasion4" value="1"></meter><br>
+
+            <label for="Espionaje4">Espionaje</label><br>
+            <meter min="1" max="200" high="150" low="60"
+                id="Espionaje4" value="1"></meter><br>
+        </fieldset>
+
+    </form>
+
+    <script>
+    function cambio4() {
+        document.getElementById("Velocidad4").value = Math.random() * 200;
+        document.getElementById("Fuerza4").value = Math.random() * 200;
+        document.getElementById("Persuasion4").value = Math.random() * 200;
+        document.getElementById("Espionaje4").value = Math.random() * 200;
+    }
+
+    function cambiarPersonaje4() {
+        let personaje = document.getElementById("valora4").value;
+
+        if (personaje == "Guerrero") {
+            Fuerza4.value = 200;
+            Velocidad4.value = 100;
+            Persuasion4.value = 50;
+            Espionaje4.value = 60;
+        }
+
+        if (personaje == "Mago") {
+            Fuerza4.value = 60;
+            Velocidad4.value = 80;
+            Persuasion4.value = 200;
+            Espionaje4.value = 100;
+        }
+
+        if (personaje == "Ladrón") {
+            Fuerza4.value = 80;
+            Velocidad4.value = 200;
+            Persuasion4.value = 100;
+            Espionaje4.value = 180;
+        }
+
+        if (personaje == "Paladín") {
+            Fuerza4.value = 180;
+            Velocidad4.value = 70;
+            Persuasion4.value = 120;
+            Espionaje4.value = 60;
+        }
+    }
+    </script>
+
+</body>
+</html>
