@@ -8,34 +8,55 @@
 </head>
 <body>
 
-    <h1>Galería de paisajes</h1>
+    <h1>Ejercicio 1</h1>
 
     <h2>1. Paisaje de montaña</h2>
     <picture>
-        <source srcset="./montana.avif" type="image/avif">
-        <source srcset="./montana.webp" type="image/webp">
-        <img src="./montana.jpg"
-             alt="Paisaje de montañas y lago"
-             width="800" height="600">
+        <source srcset="montana.JPG" type="image/webp">
+        <img src="montana.jpg" alt="Paisaje de montañas y lago" width="800" height="600" loading="lazy">
     </picture>
 
     <h2>2. Paisaje de playa</h2>
     <picture>
-        <source srcset="./playa.avif" type="image/avif">
-        <source srcset="./playa.webp" type="image/webp">
-        <img src="./playa.jpg"
-             alt="Paisaje de playa y mar"
-             width="360" height="270">
+        <source srcset="playa.jpg" type="image/webp">
+        <img src="playa.jpg" alt="Paisaje de playa y mar" width="360" height="270" loading="lazy">
     </picture>
 
     <h2>3. Paisaje de bosque</h2>
     <picture>
-        <source srcset="./bosque.avif" type="image/avif">
-        <source srcset="./bosque.webp" type="image/webp">
-        <img src="./bosque.jpg"
-             alt="Paisaje de bosque verde"
-             width="800" height="400">
+        <source srcset="bosque.webp" type="image/webp">
+        <img src="bosque.webp" alt="Paisaje de bosque verde" width="800" height="400" loading="lazy">
     </picture>
+    
+    <h1>Ejercicio 3 Semántica y Accesibilidad WCAG 2.2</h1>
+    <figure>
+        <img src="./grafica-paro.avif"
+            alt="Gráfica de barras: el paro baja del 15 % en 2022 al 10 % en 2024."
+            width="400" height="300">
+        <figcaption>
+        Evolución de la tasa de paro.
+        <p>2022: 15 %. 2023: 12 %. 2024: 10 %.</p>
+        </figcaption>
+    </figure>
+
+    <figure>
+        <button type="submit">
+        <img src="./lupa.jpg"
+            alt="Buscar"
+            width="24" height="24">
+        </button>
+        <figcaption>Botón para realizar una búsqueda.</figcaption>
+    </figure>
+
+   
+    <figure>
+        <img src="./rojo.jpg"
+            alt=""
+            aria-hidden="true"
+            width="400" height="20">
+        <figcaption>Separador decorativo.</figcaption>
+    </figure>
+
 
 </body>
 </html>
