@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    body { font-family: Arial; margin: 20px; }
+    .cabecera { background: #234; color: white; padding: 20px; }
+    .menu { background: #ddd; padding: 15px; }
+    .menu div { display: inline; margin-right: 20px; cursor: pointer; }
+    .titulo { font-size: 28px; font-weight: bold; }
+    .subtitulo { font-size: 21px; font-weight: bold; }
+    .libro { border: 1px solid #aaa; padding: 15px; margin: 10px 0; }
+    .boton { background: #246; color: white; padding: 8px; cursor: pointer; }
+    .pie { background: #234; color: white; padding: 20px; }
+  </style>
+</head>
+
+<body>
+    <h1> Diseño de Interfaces Web </h1>
+    <h1> Examen html </h1>
+    <h2> Examen-ej10-Accesibilidad </h2>
+
+
+  <div class="cabecera">
+    <div class="titulo">Biblioteca Digital Playamar</div>
+    <div>Tu biblioteca de recursos educativos</div>
+    <img src="imgs/logo.jpg" width="100">
+  </div>
+
+  <div class="menu">
+    <div onclick="location.href='index.html'">Inicio</div>
+    <div onclick="location.href='catalogo.html'">Catálogo</div>
+    <div onclick="location.href='prestamos.html'">Préstamos</div>
+    <div onclick="location.href='contacto.html'">Contacto</div>
+  </div>
+
+  <div class="contenido">
+
+    <div class="titulo">Bienvenido a nuestra biblioteca</div>
+    <div>
+      Consulta nuestro catálogo de libros y recursos digitales.
+    </div>
+
+    <div class="subtitulo">Libros destacados</div>
+
+
+    <div class="libro">
+      <img src="imgs/html.jpg" width="120">
+      <div class="subtitulo">Aprende HTML5</div>
+      <div>Autor: Juan Pérez</div>
+      <div>Manual de desarrollo web moderno.</div>
+      <div class="boton" onclick="location.href='html.html'">
+        Ver libro
+      </div>
+    </div>
+
+    <div class="libro">
+      <img src="imgs/css.jpg" width="120">
+      <div class="subtitulo">Diseño con CSS</div>
+      <div>Autora: Ana García</div>
+      <div>Guía práctica de diseño web.</div>
+      <div class="boton" onclick="location.href='css.html'">
+        Ver libro
+      </div>
+    </div>
+
+    <div class="subtitulo">Buscar libros</div>
+
+    <div>
+      <div>Introduce el título del libro:</div>
+      <input type="text" id="busqueda">
+      <div class="boton" onclick="buscar()">Buscar</div>
+    </div>
+
+    <div class="subtitulo">Solicitar información</div>
+
+    <div>
+      <div>Nombre completo</div>
+      <input type="text" id="nombre">
+
+      <div>Correo electrónico</div>
+      <input type="text" id="email">
+
+      <div>Tipo de consulta</div>
+      <select id="consulta">
+        <option>Selecciona una opción</option>
+        <option>Préstamos</option>
+        <option>Devoluciones</option>
+        <option>Otros</option>
+      </select>
+
+      <div>Mensaje</div>
+      <textarea id="mensaje"></textarea>
+
+      <div class="boton" onclick="enviar()">Enviar solicitud</div>
+    </div>
+
+  </div>
+
+  <div class="lateral">
+    <div class="subtitulo">Noticias de la biblioteca</div>
+    <div>Nuevo horario de apertura</div>
+    <div>Ampliación del catálogo digital</div>
+
+    <div class="subtitulo">Enlaces de interés</div>
+    <div>Ministerio de Educación</div>
+    <div>Bibliotecas de Andalucía</div>
+  </div>
+
+  <div class="pie">
+    <div>Biblioteca Digital Playamar - 2026</div>
+    <div>Correo: biblioteca@playamar.es</div>
+    <div>Todos los derechos reservados</div>
+  </div>
+
+
+
+</body>
+
+</html>

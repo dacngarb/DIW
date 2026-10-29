@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    body { font-family: Arial; margin: 20px; }
+    .cabecera { background: #234; color: white; padding: 20px; }
+    .menu { background: #ddd; padding: 15px; }
+    .menu div { display: inline; margin-right: 20px; cursor: pointer; }
+    .titulo { font-size: 28px; font-weight: bold; }
+    .subtitulo { font-size: 21px; font-weight: bold; }
+    .libro { border: 1px solid #aaa; padding: 15px; margin: 10px 0; }
+    .boton { background: #246; color: white; padding: 8px; cursor: pointer; }
+    .pie { background: #234; color: white; padding: 20px; }
+
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      margin: 20px;
+      color: #222;
+    }
+
+    header, footer {
+      background: #234;
+      color: white;
+      padding: 20px;
+    }
+
+    nav {
+      background: #ddd;
+      padding: 15px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+      color: #124c82;
+    }
+
+    header a, footer a {
+      color: white;
+    }
+
+    .libro {
+      border: 1px solid #aaa;
+      padding: 15px;
+      margin: 10px 0;
+    }
+
+    .boton {
+      display: inline-block;
+      background: #246;
+      color: white;
+      padding: 8px 14px;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .boton:hover {
+      background: #357;
+    }
+
+    :focus-visible {
+      outline: 3px solid #d26900;
+      outline-offset: 3px;
+    }
+
+    .saltar {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .saltar:focus {
+      position: static;
+      display: inline-block;
+      padding: 10px;
+      background: white;
+      color: black;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+    }
+
+    input, select, textarea {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .error {
+      color: #a00000;
+    }
+
+    main, aside {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+    <h1> Diseño de Interfaces Web </h1>
+    <h1> Examen html </h1>
+    <h2> Examen-ej10-Accesibilidad </h2>
+
+    <h3>Desplegable con dialog</h3>
+    <button id="abrir">Ver oferta</button>
+    <dialog id="miDialogo">
+      <h4>¡Descuento del 20%!</h4>
+      <img src="./imgs/css.jpg">
+      <p>Aprovecha esta oferta solo hoy</p>
+      <button id="cerrar">Cerrar</button>
+    </dialog>
+
+    <h3>Desplegable con details</h3>
+    <details>
+        <summary>Ver especificaciones</summary>
+            <ul>
+              <li>Color: Negro</li>
+              <li>Conexión: Bluetooth 5.0</li>
+              <li>Batería: 24 horas</li>
+            </ul>
+            <img src="./imgs/logo.jpg">
+    </details>
+    
+
+<hr> <hr> <hr> <hr> 
+<script> 
+  /*
+  Crea un componente HTML/JS para una tienda web que contenga:
+
+Un cuadro de diálogo (<dialog>): Con el título "Oferta Flash", una imagen del producto, un botón para cerrar el diálogo y un botón previo fuera del diálogo para abrirlo.
+
+Un elemento desplegable (<details> y <summary>): Con el texto del encabezado "Ver especificaciones" dentro de <summary> y, al desplegar, un texto breve con 3 características del producto y una foto del mismo.
+
+Código JavaScript: Para controlar la apertura y cierre del diálogo emergente.
+  
+  
+  */
+</script>
+
+<!-- Botón para abrir la ventana flotante -->
+<h1> Ejercicio 8 Dialog / details y summary</h1>
+
+
+
+
+ 
+<script>
+  const dialogo = document.getElementById("miDialogo");
+  
+  document.getElementById("abrir").addEventListener("click", () => dialogo.showModal());
+  document.getElementById("cerrar").addEventListener("click", () => dialogo.close());
+</script>
+
+
+
+
+</body>
+
+</html>
