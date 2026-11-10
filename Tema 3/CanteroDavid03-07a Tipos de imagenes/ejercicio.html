@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Cantero García</title>
+</head>
+<body>
+    <h1>03-07a Tipos de imagenes</h1>
+    <h2>Tipos de Formatos</h2>
+
+    <h3>1. ¿Que es la codificación Bitmap?</h3>
+    <p>La codificación Bitmap o mapa de bits es un sistema de representación de imágenes 
+        formado por una cuadrícula de pequeños puntos llamados píxeles</p>
+    
+    <h3>2. ¿Sabes otro nombre para esta técnica? ¿Qué problemas tiene? Nombra algún formato de este tipo.</h3>
+    <p>También se conoce como codificación rasterizada</p>
+    <ul>
+        <li>Pierde calidad al ampliarse</li>
+        <li>Puede ocupar mucho espacio de almacenamiento</li>
+        <li>Depende de la resolución</li>
+    </ul>
+    <p><strong>Ejemplos:</strong>BMP, JPEG, PNG y GIF</p>
+
+    <h3>3. ¿Qué es la codificación vectorial? ¿Qué problemas tiene? Nombra algún formato de este tipo</h3>
+    <p>Es un sistema que representa las imágenes mediante figuras geométricas, líneas, curvas y puntos definidos matemáticamente</p>
+    <ul>
+        <li>No es adecuada para fotografías con muchos detalles</li>
+        <li>Puede necesitar programas específicos para editarla</li>
+        <li>Las imágenes complejas pueden requerir muchos datos</li>
+    </ul>
+    <p><strong>Ejemplos:</strong>SVG, AI, EPS y CDR</p>
+
+    <h3>4. Inserta la etiqueta SVG en un documento HTML y observa qué pasa</h3>
+    <p>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+        width="170" height="165" viewBox="0 0 170 165">
+
+        <polygon fill="yellow" stroke="red" stroke-width="7"
+
+        points="129,150 85,119 41,150 57,104 15,66
+        68,66 85,15 102,65 156,66 113,98" />
+        </svg>
+    </p>
+
+    <h3>5. ¿Que es un Meta formato? ¿Soluciona los problemas de los anteriores formatos?.Nombra
+    algún formato de este tipo.</h3>
+    <p>Un metaformato es un formato capaz de almacenar imágenes utilizando diferentes 
+        métodos de representación o compresión</p>
+    <p><strong>Ejemplos:</strong>PDF y TIFF</p>
+
+
+    <h2>Parámetros de Representación de imágenes</h2>
+    <h3>6. ¿Qué es la profundidad de color?</h3>
+    <p>Es la cantidad de bits utilizados para representar el color de cada píxel</p>
+
+    <h3>7. ¿Cuál se suele usar actualmente?</h3>
+    <p>Actualmente es habitual utilizar 24 bits</p>
+
+    <h3>8. ¿Qué es el canal alfa?</h3>
+    <p>Es un canal que controla la transparencia de una imagen</p>
+
+    <h3>9. ¿Qué es la paleta de color?</h3>
+    <p>Es un conjunto limitado de colores que se utilizan para representar una imagen</p>
+
+
+    <h2>Formatos Gráficos</h2>
+    <h3>10. ¿Qué es la paleta de color?</h3>
+    <p>Es una tabla que contiene los colores disponibles en una imagen</p>
+
+    <h3>11. Para cada elemento de la siguiente lista especifica ¿Que caracteriza cada formato?
+    (compresión, tipo, es usable en la web, programa que lo usa , etc ... ) ? Busca en internet un
+    ejemplo de cada uno usando la palabra clave filetype: en google</h3>
+    <table border="1">
+        <tr>
+            <th>Formato</th>
+            <th>Tipo</th>
+            <th>Compresión</th>
+            <th>Uso web</th>
+            <th>Programa o uso habitual</th>
+            <th>Ejemplo</th>
+        </tr>
+        <tr>
+            <td>JPEG</td>
+            <td>Mapa de bits</td>
+            <td>Con pérdida</td>
+            <td>Sí</td>
+            <td>Photoshop y fotografías</td>
+            <td><a href="https://www.google.com/search?q=fotografia+filetype%3Ajpg">Ejemplo JPEG</a></td>
+        </tr>
+        <tr>
+            <td>PNG</td>
+            <td>Mapa de bits</td>
+            <td>Sin pérdida</td>
+            <td>Sí</td>
+            <td>Photoshop y GIMP</td>
+            <td><a href="https://www.google.com/search?q=logo+filetype%3Apng">Ejemplo PNG</a></td>
+        </tr>
+        <tr>
+            <td>GIF</td>
+            <td>Mapa de bits</td>
+            <td>Sin pérdida, 256 colores</td>
+            <td>Sí</td>
+            <td>Animaciones web</td>
+            <td><a href="https://www.google.com/search?q=animacion+filetype%3Agif">Ejemplo GIF</a></td>
+        </tr>
+        <tr>
+            <td>BMP</td>
+            <td>Mapa de bits</td>
+            <td>Normalmente sin compresión</td>
+            <td>Poco habitual</td>
+            <td>Paint y Windows</td>
+            <td><a href="https://www.google.com/search?q=imagen+filetype%3Abmp">Ejemplo BMP</a></td>
+        </tr>
+        <tr>
+            <td>TIFF</td>
+            <td>Mapa de bits</td>
+            <td>Con o sin pérdida</td>
+            <td>Poco habitual</td>
+            <td>Photoshop y escáneres</td>
+            <td><a href="https://www.google.com/search?q=fotografia+filetype%3Atif">Ejemplo TIFF</a></td>
+        </tr>
+        <tr>
+            <td>SVG</td>
+            <td>Vectorial</td>
+            <td>No utiliza compresión de píxeles</td>
+            <td>Sí</td>
+            <td>Inkscape e Illustrator</td>
+            <td><a href="https://www.google.com/search?q=logo+filetype%3Asvg">Ejemplo SVG</a></td>
+        </tr>
+    </table>
+
+    <h2>Cuestionario: formatos de imagen modernos</h2>
+    <h3>1. ¿Qué formato de imagen utiliza habitualmente compresión con pérdida para fotografías?</h3>
+    <p>JPEG o JPG</p>
+
+    <h3>2. ¿Qué formato de imagen admite transparencias y compresión sin pérdida?</h3>
+    <p>PNG</p>
+
+    <h3>3. ¿Qué formato utiliza una paleta máxima de 256 colores por fotograma?</h3>
+    <p>GIF</p>
+
+    <h3>4. ¿Qué formato de imagen fue desarrollado por Google?</h3>
+    <p>WebP</p>
+
+    <h3>5. ¿En qué códec de vídeo está basado el formato AVIF?</h3>
+    <p>Está basado en el códec de vídeo AV1</p>
+
+    <h3>6. ¿Qué formato utiliza gráficos vectoriales y 
+        permite ampliar las imágenes sin perder calidad?</h3>
+    <p>SVG</p>
+
+    <h3>7. ¿Cuál es la extensión de archivo del formato JPEG XL?</h3>
+    <p>.jxl</p>
+
+    <h3>8. ¿Qué formato es habitual en las fotografías realizadas con los teléfonos iPhone?</h3>
+    <p>HEIC, basado en el formato HEIF</p>
+
+    <h3>9. ¿Qué formato permite crear animaciones utilizando imágenes PNG?</h3>
+    <p>APNG</p>
+
+    <h3>10. ¿Qué formato se utiliza frecuentemente en fotografía profesional y escaneado de imágenes?</h3>
+    <p>TIFF</p>
+
+    <h3>11. ¿Qué es el formato BMP y cuál es su principal inconveniente?</h3>
+    <p>BMP es un formato de imagen de mapa de bits desarrollado por Microsoft. 
+        Su principal inconveniente es que suele generar archivos muy grandes porque 
+        normalmente no utiliza una compresión eficiente</p>
+    
+    <h3>12. ¿Qué es OxiPNG y para qué se utiliza?</h3>
+    <p>OxiPNG</p>
+
+    <h3>13. ¿Qué es MozJPEG y qué ventajas ofrece respecto a un codificador JPEG convencional?</h3>
+    <p>MozJPEG es un codificador de imágenes JPEG que mejora la compresión. 
+        Permite conseguir archivos más pequeños manteniendo una calidad visual similar a la 
+        de los codificadores tradicionales</p>
+
+    <h3>14. ¿Qué es QOI y qué características destacan en su funcionamiento?</h3>
+    <p>Es un formato de imagen que utiliza compresión sin pérdida</p>
+    <ul>
+        <li>Ser muy rápido al comprimir y descomprimir</li>
+        <li>Tener un diseño sencillo</li>
+        <li>Conseguir tamaños de archivo similares a PNG</li>
+        <li>Permitir imágenes con y sin transparencia</li>
+    </ul>
+
+    <h3>15. ¿Qué formato es especialmente adecuado para logotipos que deben ampliarse sin 
+        perder calidad?</h3>
+    <p>SVG</p>
+
+    <h3>16. ¿Qué formatos de imagen permiten almacenar animaciones?</h3>
+    <p>GIF, APNG, WebP, AVIF y JPEG XL</p>
+
+    <h3>17. ¿Qué significa HDR y qué formato de imagen de los estudiados permite utilizarlo?</h3>
+    <p>Es una tecnología que permite representar una mayor variedad de niveles de brillo, luces y sombras</p>
+    <p><strong>Ejemplos:</strong>AVIF y JPEG XL</p>
+
+    <h3>18. ¿Qué ventajas presenta PNG frente a JPEG?</h3>
+    <ul>
+        <li>PNG utiliza compresión sin pérdida, por lo que no pierde calidad al guardarse</li>
+        <li>Permite transparencias</li>
+        <li>Es mejor para logotipos, dibujos, iconos y capturas de pantalla</li>
+        <li>Conserva mejor los bordes y los textos</li>
+    </ul>
+    <h3>19. ¿Cuál es la diferencia entre una imagen vectorial y una imagen rasterizada?</h3>
+    <p>Una imagen vectorial está formada por figuras geométricas definidas matemáticamente 
+        y puede ampliarse sin perder calidad</p>
+
+    <h3>20. ¿Qué sucede al recomprimir una imagen JPEG mediante JPEG XL en modo sin pérdida?</h3>
+    <p>Se puede reducir el tamaño del archivo conservando exactamente los datos originales del JPEG</p>
+
+
+</body>
+</html>
