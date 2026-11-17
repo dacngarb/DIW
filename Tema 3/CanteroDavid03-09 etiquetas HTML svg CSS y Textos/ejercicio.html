@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Cantero García</title>
+</head>
+<body>
+    <h1>03-09 etiquetas HTML svg CSS y Textos</h1>
+    <h2>Ejercicio 1. Crea cada uno de los ejemplos que aparecen en la práctica.</h2>
+    <h3>Ejemplo 1</h3>
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <style>
+            #MyRect {
+            stroke: black;
+            fill: red;
+            }
+        </style>
+    </defs>
+        <rect x="10" height="180" y="10" width="180" id="MyRect"/>
+    </svg>
+
+    <h3>Ejemplo 2</h3>
+    <svg viewBox="-100 -100 310 310" xmlns="http://www.w3.org/2000/svg" width="200" height="200" >
+    <defs>
+        <style>
+            #circ:hover { 
+                stroke: black; 
+                fill: blue; 
+            }
+        </style>
+    </defs>
+        <circle cx="100" cy="100" r="100" stroke="darkorange" fill="transparent" stroke-width="15" id="circ"/>
+    </svg>
+
+    <h3>Ejemplo 3</h3>
+    <svg viewBox="-100 -100 310 310" xmlns="http://www.w3.org/2000/svg" width="200" height="200" >
+    <defs>
+    <style>
+    #amarillo1:hover { stroke:#ffffAA ; }
+    #amarillo2:hover { stroke:#ffff66 ; }
+    #amarillo3:hover { stroke:#FFFF00 ; }
+    #amarillo4:hover { stroke:orange ; }
+    #amarillo5:hover { stroke:#AA5500;}
+    </style>
+    </defs>
+    <circle cx="100" cy="100" r="100" stroke="darkorange" fill="transparent" stroke-width="15" id="amarillo5"/>
+    <circle cx="100" cy="100" r="80" stroke="orange" fill="transparent" stroke-width="12" id="amarillo1"/>
+    <circle cx="100" cy="100" r="60" stroke="#EEEE00" fill="transparent" stroke-width="9" id="amarillo3"/>
+    <circle cx="100" cy="100" r="40" stroke="#ffff00" fill="transparent" stroke-width="6" id="amarillo2" />
+    <circle cx="100" cy="100" r="20" stroke="#ffff77" fill="transparent" stroke-width="3" id="amarillo1"/>
+    </svg>
+
+    <h2>Ejercicio 2. Crea la figura de la izquierda y añade un estilo css el para que al 
+        pasar el ratón encima de cada forma se ponga en color verde</h2>
+    <svg viewBox="-100 -100 -110 210" xmlns="http://www.w3.org/2000/svg"
+     width="400" height="200">
+     <defs>
+        <style>
+            #verde:hover {
+                fill: green;
+            }
+        </style>
+     </defs>
+        <rect x="10" y="10" width="100" height="100" fill="blue" stroke-width="5" id="verde"> </rect>
+        <circle cx="200" cy="50" r="50"  fill="red" stroke-width="10" id="verde"/>
+        <polygon points="10,200 50,140 80,200 "  fill="orange" stroke-width="2" id="verde"/>
+    </svg>
+
+    <h2>Ejercicio 3. Modifica el anterior ejercicio con esta forma para que
+    al pasar el ratón encima de cada forma se ponga en el color que
+    tiene cada forma pero en claro.</h2>
+    <svg viewBox="-100 -100 -110 210" xmlns="http://www.w3.org/2000/svg"
+     width="400" height="200">
+     <defs>
+        <style>
+            #colorClaroRojo:hover {fill: #FF9999;}
+            #colorClaroAzul:hover {fill: #99CCFF;}
+            #colorClaroNaranja:hover {fill: #FFCC99;}
+        </style>
+     </defs>
+        <rect x="10" y="10" width="100" height="100" fill="blue" stroke-width="5" id="colorClaroAzul"> </rect>
+        <circle cx="200" cy="50" r="50"  fill="red" stroke-width="10" id="colorClaroRojo"/>
+        <polygon points="10,200 50,140 80,200 "  fill="orange" stroke-width="2" id="colorClaroNaranja"/>
+    </svg>
+
+    <h2>Ejercicio 4. Crea un texto que tenga como estilo fuente georgia y tamaño 25 que diga “IESPLAYAMAR”</h2>
+    <svg width="350" height="60" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+        text{ dominant-baseline: hanging; font: 25px geordia; }
+        </style>
+    </defs>
+        <text> IESPLAYAMAR </text>
+    </svg>
+
+    <h2>Ejercicio 5. Modifica el ejemplo 12 añadiendo nuevos circulos y gradientes para obtener esto</h2>
+    <svg viewBox="0 0 200 200" width="400" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    <linearGradient id="myGradient" gradientTransform="rotate(90)">
+        <stop offset="5%" stop-color="gold" />
+        <stop offset="95%" stop-color="red" />
+    </linearGradient>
+    </defs>
+        <!-- using my linear gradient -->
+        <circle cx="100" cy="100" r="75" fill="url('#myGradient')" />
+        <circle cx="100" cy="100" r="50" fill="url('#myGradient')" />
+    </svg>
+</body>
+</html>

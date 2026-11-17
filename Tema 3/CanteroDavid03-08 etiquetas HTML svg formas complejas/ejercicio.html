@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Cantero García</title>
+</head>
+<body>
+    <h1>03-08 etiquetas HTML svg formas complejas</h1>
+    <h2>Ejercicio 1. Crea cada uno de los ejemplos que aparecen el la practica</h2>
+    <h3>Círculo(circle)</h3>
+    <svg viewBox="-100 -100 310 310" xmlns="http://www.w3.org/2000/svg"
+    width="200" height="200" >
+    <circle cx="100" cy="100" r="100" stroke="red" fill="black" stroke-width="10"/>
+    </svg>
+
+    <h3>Rectángulo(rect)</h3>
+    <svg width="120" height="120" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="200" >
+        <rect x="10" y="10" width="100" height="100" stroke="red" fill="black" stroke-width="5"> </rect>
+    </svg>
+
+    <h3>Elipse</h3>
+    <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200" >
+        <ellipse cx="110" cy="50" rx="100" ry="50" stroke="red" fill="black" stroke-width="5"/>
+    </svg>
+
+    <h3>line</h3>
+    <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200" >
+        <line x1="110" x2="50" y1="100" y2="50" stroke="black" stroke-width="5"/>
+    </svg>
+
+    <h3>polyline</h3>
+    <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" width="200" height="200" >
+        <polyline points="0,100 50,25 50,75 100,0" stroke="red" fill="black" />
+    </svg>
+
+    <h3>polygon</h3>
+    <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+        <polygon points="0,100 50,25 50,75 100,0" stroke="red" fill="black" stroke-width="2"/>
+    </svg>
+
+
+    <h3>path</h3>
+    <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" width="200" height="200" >
+        <path fill="black" stroke="red" stroke-width="2" d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+    </svg>
+
+
+    <h2>Ejercicio 2. Crea un svg que aparezca este diseño con círculos</h2>
+    <svg viewBox="-100 -100 310 310" xmlns="http://www.w3.org/2000/svg"
+    width="200" height="200" >
+        <circle cx="100" cy="100" r="20" stroke="#FF6666" fill="transparent" stroke-width="3"/>
+        <circle cx="100" cy="100" r="40" stroke="#FF0000" fill="transparent" stroke-width="6"/>
+        <circle cx="100" cy="100" r="60" stroke="#CC0000" fill="transparent" stroke-width="9"/>
+        <circle cx="100" cy="100" r="80" stroke="#990000" fill="transparent" stroke-width="12"/>
+        <circle cx="100" cy="100" r="100" stroke="#660000" fill="transparent" stroke-width="15"/>
+    </svg>
+
+
+    <h2>Ejercicio 3. Crea un svg con dos lineas perpendiculares y paralelas</h2>
+    <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200" >
+        <line x1="110" x2="50" y1="200" y2="50" stroke="black" stroke-width="5"/>
+        <line x1="-100" x2="110" y1="200" y2="50" stroke="black" stroke-width="5"/>
+    </svg>
+    <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200" >
+        <line x1="50" x2="50" y1="200" y2="50" stroke="black" stroke-width="5"/>
+        <line x1="10" x2="10" y1="200" y2="50" stroke="black" stroke-width="5"/>
+    </svg>
+
+
+    <h2>Ejercicio 4. Crea un svg con una linea perpendicular a una esfera</h2>
+    <svg viewBox="-100 -100 310 310" xmlns="http://www.w3.org/2000/svg"
+    width="200" height="200" >
+        <circle cx="100" cy="100" r="100" stroke="red" fill="transparent" stroke-width="15"/>
+        <line x1="-100" x2="310" y1="300" y2="-100" stroke="black" stroke-width="5"/>
+    </svg>
+
+
+    <h2>Ejercicio 5. Modifica el anterior para que tenga perpendiculares en 4 puntos</h2>
+    <svg viewBox="-100 -100 310 310" xmlns="http://www.w3.org/2000/svg"
+    width="200" height="200" >
+        <circle cx="100" cy="100" r="100" stroke="red" fill="transparent" stroke-width="15"/>
+        <line x1="-100" x2="450" y1="-10" y2="-10" stroke="black" stroke-width="5"/>
+    </svg>
+
+    <svg viewBox="-100 -100 350 310" xmlns="http://www.w3.org/2000/svg"
+    width="200" height="200" >
+        <circle cx="100" cy="100" r="100" stroke="red" fill="transparent" stroke-width="5"/>
+        <line x1="1" x2="1" y1="-80" y2="250" stroke="blue" stroke-width="5"/>
+        <line x1="200" x2="205" y1="-80" y2="250" stroke="darkgreen" stroke-width="5"/>
+        <line x1="-500" x2="300" y1="-10" y2="-10" stroke="lightblue" stroke-width="5"/>
+        <line x1="-500" x2="300" y1="200" y2="200" stroke="lightgreen" stroke-width="5"/>
+    </svg>
+
+    <h2>Ejercicio 6. Crea un svg que aparezca este diseño con elipses. Tienes que hacer una
+    progresión desde los valores</h2>
+    <svg viewBox="-100 -100 -110 210" xmlns="http://www.w3.org/2000/svg"
+     width="400" height="200">
+        <ellipse cx="75" cy="75" rx="10" ry="50" stroke="orange" fill="transparent" stroke-width="3"/>
+        <ellipse cx="75" cy="75" rx="20" ry="40" stroke="orange" fill="transparent" stroke-width="3"/>
+        <ellipse cx="75" cy="75" rx="30" ry="30" stroke="orange" fill="transparent" stroke-width="3"/>
+        <ellipse cx="75" cy="75" rx="40" ry="10" stroke="orange" fill="transparent" stroke-width="3"/>
+        <ellipse cx="75" cy="75" rx="50" ry="0" stroke="orange" fill="transparent" stroke-width="3"/>
+    </svg>
+
+    <h2>Ejercicio 7. Crea un svg con esta forma (mas o menos) el triangulo es un polígono de tres puntos</h2>
+    <svg viewBox="-100 -100 -110 210" xmlns="http://www.w3.org/2000/svg"
+     width="400" height="200">
+        <rect x="10" y="10" width="100" height="100" fill="blue" stroke-width="5"> </rect>
+        <circle cx="200" cy="50" r="50"  fill="red" stroke-width="10"/>
+        <polygon points="10,200 50,140 80,200 "  fill="orange" stroke-width="2"/>
+    </svg>
+    
+
+    <h2>Ejercicio 8. Usa https://yqnn.github.io/svg-path-editor/ para generar una ruta chula</h2>
+    <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" width="200" height="200" >
+        <path fill="black" stroke="red" stroke-width="2" d="M 20 40 L 50 5 L 65 0 L 60 15 L 25 45 C 30 50 30 55 35 50 C 35 55 40 60 35 60 A 7.1 7.1 90 0 1 30 65 A 25 25 90 0 0 20 50 Q 17.5 49.5 17.5 52.5 T 10 59 T 6 55 T 12.5 47.5 T 15 45 A 25 25 90 0 0 0 35 A 7.1 7.1 90 0 1 5 30 C 5 25 10 30 15 30 C 10 35 15 35 20 40 M 50 5 L 50 15 L 60 15 L 51 14 L 50 5 z" />
+    </svg>
+</body>
+</html>
