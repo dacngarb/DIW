@@ -99,14 +99,116 @@
     <svg viewBox="0 0 200 200" width="400" xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-    <linearGradient id="myGradient" gradientTransform="rotate(90)">
+    <linearGradient id="primerCirculo" gradientTransform="rotate(90)">
         <stop offset="5%" stop-color="gold" />
         <stop offset="95%" stop-color="red" />
     </linearGradient>
+    <linearGradient id="segundoCirculo" gradientTransform="rotate(90)">
+        <stop offset="5%" stop-color="red" />
+        <stop offset="97%" stop-color="gold" />
+    </linearGradient>
     </defs>
-        <!-- using my linear gradient -->
-        <circle cx="100" cy="100" r="75" fill="url('#myGradient')" />
-        <circle cx="100" cy="100" r="50" fill="url('#myGradient')" />
+        
+        <circle cx="100" cy="100" r="75" fill="url('#primerCirculo')" />
+        <circle cx="100" cy="100" r="50" fill="url('#segundoCirculo')" />
+        <circle cx="100" cy="100" r="37" fill="url('#primerCirculo')" />
+        <circle cx="100" cy="100" r="25" fill="url('#segundoCirculo')" />
     </svg>
+
+    <h2>Ejercicio 6. Crea un texto que tenga como estilo fuente georgia y tamaño 25 que diga 
+        “FRANCIA” y tenga los colores asi Rojo: #DC2432 Azul: #0f2493 . Debes jugar con tspan.</h2>
+    <svg width="350" height="60" xmlns="http://www.w3.org/2000/svg">
+        <text><tspan fill="#DC2432">FR</tspan><tspan fill="grey">AN</tspan><tspan font-weight="bold" fill="#0f2493">CIA</tspan></text>
+        <style>
+            text{font-size: 25px; font-family: Georgia;}
+        </style>
+    </svg>
+
+    <h2>Ejercicio 7. Ha como el anterior para que al pasar sobre el ratón se agrande el 
+        tamaño de cada letra. Debes jugar con tspan y hover.</h2>
+    <svg width="350" height="60" xmlns="http://www.w3.org/2000/svg" style="background-color: #99CCFF;">
+    <text>
+        <tspan fill="#DC2432" id="es">ES</tspan><tspan fill="yellow" id="pa">PA</tspan><tspan fill="#DC2432" id="ña">ÑA</tspan>
+    </text>
+
+    <style>
+        text {font-size: 25px; font-family: Georgia;}
+        #es:hover {font-size: 30px;}
+        #pa:hover {font-size: 35px;}
+        #ña:hover {font-size: 40px;}
+    </style>
+    </svg>
+
+    <h2>Ejercicio 8. Crea un texto que tenga como estilo fuente Georgia y tamaño 25 que diga 
+        “IES PLAYAMAR” usando un path curvo que crees con la herramienta https://yqnn.github.io/svg-path-editor/</h2>
+    <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+    <path id="my_path" d="M 25 0 C 35 18.3333 75 35 65 0 C 70 25 95 30 120 15 z" fill="transparent" />
+        <text>
+            <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#my_path">
+                IES PLAYAMAR
+            </textPath>
+        </text>
+        <style>
+            text{font-family: Georgia; font-size: 25px;}
+        </style>
+    </svg>
+
+    <h2>Ejercicio 9. A partir del ejemplo intenta sacar los siguientes degradados</h2>
+    <svg viewBox="10 -10 400 200" width="900" height="500" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" >
+    <defs>
+    <linearGradient id="circulo" gradientTransform="rotate(90)">
+        <stop offset="10%" stop-color="red" />
+        <stop offset="30%" stop-color="yellow" />
+        <stop offset="50%" stop-color="green" />
+        <stop offset="70%" stop-color="cyan" />
+        <stop offset="85%" stop-color="blue" />
+        <stop offset="90%" stop-color="magenta" />
+    </linearGradient>
+    <radialGradient id="radialGradient1">
+        <stop offset="0%" stop-color="blue" />
+        <stop offset="10%" stop-color="green" />
+        <stop offset="20%" stop-color="blue" />
+        <stop offset="30%" stop-color="green" />
+        <stop offset="40%" stop-color="blue" />
+        <stop offset="50%" stop-color="green" />
+        <stop offset="60%" stop-color="blue" />
+        <stop offset="70%" stop-color="green" />
+        <stop offset="80%" stop-color="blue" />
+        <stop offset="90%" stop-color="green" />
+        <stop offset="100%" stop-color="blue" />
+    </radialGradient>
+    </defs>
+        <circle cx="100" cy="100" r="75" fill="url('#circulo')" />
+        <circle cx="300" cy="100" r="75" fill="url('#radialGradient1')" />
+    </svg>
+
+    <h2>Ejercicio 10. modifica los textos de viva torremolinos para sacar algo parecido a esto</h2>
+
+    <h2>Ejercicio 10. Viva Torremolinos</h2>
+
+    <svg width="700" height="240" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="torremolinos">
+            <stop offset="0%" stop-color="red" />
+            <stop offset="15%" stop-color="orange" />
+            <stop offset="30%" stop-color="yellow" />
+            <stop offset="45%" stop-color="green" />
+            <stop offset="60%" stop-color="cyan" />
+            <stop offset="75%" stop-color="blue" />
+            <stop offset="90%" stop-color="purple" />
+            <stop offset="100%" stop-color="red" />
+        </linearGradient>
+        <path id="pathTorre"d="M 20 100 C 100 150 150 80 220 100 S 350 80 450 100 S 550 80 680 60"/>
+        <style>
+            text {font-family: Arial, sans-serif;font-size: 65px;font-weight: bold;}
+        </style>
+    </defs>
+    <text fill="url(#torremolinos)">
+        <textPath href="#pathTorre">VIVA TORREMOLINOS</textPath>
+    </text>
+
+    </svg>
+
 </body>
 </html>
